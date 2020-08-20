@@ -44,3 +44,8 @@ java -jar /Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar --dbhost localhost --
 ```
 java -jar /Users/stefan/apps/ilivalidator-1.11.6/ilivalidator-1.11.6.jar fubar.xtf
 ```
+
+
+## Test wegen --createNumChecks	
+
+java -jar /Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar --dbhost localhost --dbport 54322 --dbdatabase oereb --models SO_AFU_Igel_Publikation_20200429 --dbusr admin --dbpwd admin --dbschema afu_igel_pub --disableValidation  --strokeArcs --createNumChecks --schemaimport 
