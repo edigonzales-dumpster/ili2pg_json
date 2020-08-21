@@ -14,7 +14,7 @@ sogis/oereb2-db:latest
 
 Schema anlegen
 ```
-java -jar /Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar --dbhost localhost --dbport 54322 --dbdatabase oereb --models SO_AfU_Gewaesserschutz_Publikation_20200115 --dbusr admin --dbpwd admin --dbschema afu_gewaesserschutz_pub --disableValidation --coalesceJson --strokeArcs --schemaimport
+java -jar /Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar --dbhost localhost --dbport 54322 --dbdatabase oereb --models SO_AfU_Gewaesserschutz_Publikation_20200115 --dbusr admin --dbpwd admin --dbschema afu_gewaesserschutz_pub --coalesceJson --defaultSrsCode 2056 --createGeomIdx --createFk --createFkIdx --createUnique --createEnumTabs --beautifyEnumDispName --createMetaInfo --createNumChecks --nameByTopic --strokeArcs --createEnumTabsWithId	 --schemaimport
 ```
 
 ```
