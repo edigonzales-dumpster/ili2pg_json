@@ -47,9 +47,16 @@ java -jar /Users/stefan/apps/ilivalidator-1.11.6/ilivalidator-1.11.6.jar fubar.x
 
 
 ## Test wegen --createNumChecks	
-
+```
 java -jar /Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar --dbhost localhost --dbport 54322 --dbdatabase oereb --models SO_AFU_Igel_Publikation_20200429 --dbusr admin --dbpwd admin --dbschema afu_igel_pub --disableValidation  --strokeArcs --createNumChecks --schemaimport 
-
+```
 
 ## Geopackage und JSON (wegen Datenabgabe)
+```
 java -jar /Users/stefan/apps/ili2gpkg-4.4.1/ili2gpkg-4.4.1.jar --dbfile gaga.gpkg --models SO_AfU_Gewaesserschutz_Publikation_20200115 --coalesceJson --defaultSrsCode 2056 --createEnumTabs --beautifyEnumDispName --createMetaInfo --nameByTopic --strokeArcs --schemaimport
+```
+
+## NOT NULL Geometry
+java -jar /Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar --dbhost localhost --dbport 54322 --dbdatabase oereb --models PlanerischerGewaesserschutz_LV95_V1_1 --dbusr admin --dbpwd admin --dbschema afu_gewaesserschutz_edit --defaultSrsCode 2056 --createGeomIdx --createFk --createFkIdx --createUnique --createEnumTabs --beautifyEnumDispName --createMetaInfo --createNumChecks --nameByTopic --strokeArcs --schemaimport
+
+
